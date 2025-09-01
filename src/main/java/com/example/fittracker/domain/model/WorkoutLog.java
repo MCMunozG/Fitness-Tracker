@@ -9,6 +9,7 @@ public record WorkoutLog(
     Long userId,
     Long workoutId,
     LocalDate date,
+    // Indicates the duration spent on each exercise within the workout.
     Map<String,Integer> timePerExerciseMinutes,
     Integer totalMinutes,
     Integer calories

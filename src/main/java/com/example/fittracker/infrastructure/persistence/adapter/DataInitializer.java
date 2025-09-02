@@ -15,6 +15,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component @Order(1)
+// This is my initializer that validates and loads default data if required
 public class DataInitializer implements CommandLineRunner {
     private final boolean seedAdmin;
     private final boolean seedDefault;

@@ -8,5 +8,5 @@ import java.util.Optional;
 // This is my JPA repository interface for accessing user data in the database
 public interface UserJpaRepository extends JpaRepository<UserEntity, Long> {
     Optional<UserEntity> findByEmail(String email);
-    long countByRole(String role);
+    Long countByRole(String role);
 }
